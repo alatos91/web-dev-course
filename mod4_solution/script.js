@@ -7,9 +7,9 @@
     firstLetter = names[i].charAt().toLowerCase();
 
     if (firstLetter == "j") {
-      window.byeSpeaker.speak(names[i]);
+      byeSpeaker.speak(names[i]); //no need to invoke through window.byeSpeaker.speak- if it can't find byeSpeaker in this function, it'll look for it in global context
     } else {
-      window.helloSpeaker.speak(names[i]);
+      helloSpeaker.speak(names[i]);
     }
   }
 
